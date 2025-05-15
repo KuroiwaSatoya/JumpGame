@@ -5,15 +5,17 @@ PlayerJump::PlayerJump(PlayerMove& _playerMove) : playerMove(_playerMove) {
 
 	directionY = 0;
 
-	jumpForce = 600;
+	jumpForce = 800;
 
     isGround = false;
 }
 
 void PlayerJump::Update() {
 
+    // playerMoveからisGroundを持ってくる
     isGround = playerMove.GetIsGround();
 
+    // スペースキーか↑が押されていたら
     if (CheckHitKey(KEY_INPUT_SPACE) || CheckHitKey(KEY_INPUT_UP)) {
 
         if (isGround) {
@@ -22,9 +24,16 @@ void PlayerJump::Update() {
 
         }
     }
+    // 押されていないならdirectionYを0に
     else if (isGround) {
-        directionY = 0;
+        StopJump();
     }
 
     playerMove.AddDirectionY(directionY);
+}
+
+void PlayerJump::StopJump() {
+
+    directionY = 0;
+
 }

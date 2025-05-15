@@ -102,7 +102,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	PlayerMove playerMove;
 	players[PLAYER_MOVE] = &playerMove;
 	players[PLAYER_RUN] = new PlayerRun(playerMove);
-	players[PLAYER_JUMP] = new PlayerJump(playerMove);
+	PlayerJump playerJump(playerMove);
+	players[PLAYER_JUMP] = &playerJump;
 	players[PLAYER_GRAVITY] = new PlayerGravity(playerMove);
 	players[PLAYER_DISPLAY] = new PlayerDisplay(loadImages, playerMove);
 
@@ -119,7 +120,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	GameManagerMain* gameManagers[GAMEMANAGER_ARRAY_SIZE];
 	gameManagers[GAMEMANAGER_BACKGROUND] = new Background(loadImages);
 	gameManagers[GAMEMANAGER_CAMERA] = new Camera(playerMove);
-	gameManagers[GAMEMANAGER_COLLIDER] = new Collider(playerMove, &units[0]);
+	gameManagers[GAMEMANAGER_COLLIDER] = new Collider(playerMove, playerJump, &units[0]);
 
 	// update‚Ý‚½‚¢‚È‚à‚Ì
 	while (TRUE) {

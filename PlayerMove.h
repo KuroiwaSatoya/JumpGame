@@ -14,13 +14,13 @@ public:
 
 	float GetY() const { return position.y; }
 
-	float GetLastDirectionY() const { return lastDirection.y; }
-
 	Vector2 GetPosition() const { return position; }
 
 	Vector2 GetImageSize() const { return imageSize; }
 
 	bool GetIsGround() const { return isGround; }
+
+	void SetPositionX(float _positionX) { position.x = _positionX; }
 
 	void SetPositionY(float _positionY) { position.y = _positionY; }
 
@@ -40,7 +40,7 @@ private:
 	Vector2 position;
 
 	// Playerの移動方向
-	Vector2 direction, lastDirection;
+	Vector2 direction;
 
 	// デルタタイム
 	float deltaTime;

@@ -2,6 +2,7 @@
 #include "GameManagerMain.h"
 #include "Screen.h"
 #include "LoadImages.h"
+#include "Vector2.h"
 
 class Background : public GameManagerMain {
 public:
@@ -17,8 +18,8 @@ private:
 	int backgroundImage;
 
 	// ”wŒi‰æ‘œ‚Ìc‰¡‚Ì‘å‚«‚³
-	int backgroundImageWidth, backgroundImageHeight;
+	Vector2 size;
 
 	// ”wŒi‚ğ•`‰æ‚·‚éÀ•W
-	int x, y;
+	Vector2 position;
 };

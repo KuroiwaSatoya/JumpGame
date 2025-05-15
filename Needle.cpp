@@ -5,6 +5,7 @@
 Needle::Needle(){
 	TriangleLength = 80;
 
+	// 三角形の各頂点の座標を調整
 	TriangleVertexesX1 = TriangleLength / 2;
 	TriangleVertexesX2 = 0;
 	TriangleVertexesX3 = TriangleLength;

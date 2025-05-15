@@ -12,6 +12,8 @@ public:
 	float GetCameraY() const { return cameraY; };
 
 private:
+
+	// ƒJƒƒ‰‚ÌÀ•W
 	int cameraY;
 
 	// playerMove‚Ì•Û

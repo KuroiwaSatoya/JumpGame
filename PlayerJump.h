@@ -8,6 +8,8 @@ public:
 
 	void Update() override;
 
+	void StopJump();
+
 private:
 
 	// 方向(マイナスの上方向となる)

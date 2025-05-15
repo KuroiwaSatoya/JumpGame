@@ -55,8 +55,6 @@ void PlayerMove::Update() {
 		position.y = SCREEN_HEIGHT - imageSize.y;
 	}
 
-	direction = lastDirection;
-
 	direction.x = 0;
 	direction.y = 0;
 

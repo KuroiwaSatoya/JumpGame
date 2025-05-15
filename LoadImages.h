@@ -1,5 +1,7 @@
 #pragma once
 
+// ‰æ‘œ‚ğ“Ç‚İ‚Ş‚½‚ß‚ÌƒNƒ‰ƒX
+// “¯‚¶‰æ‘œ‚ª•¡”‰ñ“Ç‚İ‚Ü‚ê‚é‚±‚Æ‚ğ–h‚®
 class LoadImages {
 public:
 	

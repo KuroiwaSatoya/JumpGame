@@ -12,6 +12,8 @@ PlayerRun::PlayerRun(PlayerMove& _playerMove) : playerMove(_playerMove) {
 
 void PlayerRun::Update() {
 
+    // A、←キーが押されていたら左へ、D、→キーが押されていたら右へ行く。
+    // 押されていない、もしくは両方押されていたら動かない
     if (CheckHitKey(KEY_INPUT_A) || CheckHitKey(KEY_INPUT_LEFT)) {
         
         if (CheckHitKey(KEY_INPUT_D) || CheckHitKey(KEY_INPUT_RIGHT)) {
