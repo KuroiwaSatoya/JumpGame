@@ -78,9 +78,6 @@
     <ClCompile Include="Collider.cpp">
       <Filter>ソース ファイル\GameManager</Filter>
     </ClCompile>
-    <ClCompile Include="UnitManager.cpp">
-      <Filter>ソース ファイル\Stage</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Needle.h">

@@ -7,7 +7,7 @@ public:
 
 	Unit(bool _isFirstUnit);
 
-	Unit(Vector2 _position);
+	Unit();
 
 	~Unit() = default;
 

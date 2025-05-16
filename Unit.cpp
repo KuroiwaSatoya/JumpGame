@@ -18,13 +18,13 @@ Unit::Unit(bool _isFirstUnit) {
 }
 
 // 2つ目以降
-Unit::Unit(Vector2 _position){
+Unit::Unit(){
 	// GetColor(255, 255, 255)と同じ(16進数の色表記でOK)
 	unitColor = 0xFFFFFF;
 
 	unitLineColor = 0x000000;
 
-	position = _position;
+	position = Vector2(550, 500);
 
 	size = Vector2(200, 30);
 

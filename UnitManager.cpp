@@ -19,6 +19,8 @@ UnitManager::~UnitManager() {
 }
 
 void UnitManager::Update() {
+    
+    // 本当は移動距離に応じてスポーンさせたい
     spawnTimer += deltaTime;
 
     if (spawnTimer >= SPAWN_INTERVAL) {

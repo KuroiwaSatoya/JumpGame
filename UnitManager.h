@@ -12,15 +12,18 @@ public:
 
 private:
 
+    // Unitの最大の数
     static const int MAX_UNITS = 10;
-
-    Unit* units[MAX_UNITS];
 
     float spawnTimer;
 
     const float SPAWN_INTERVAL = 5.0f;
 
+    // 出現させるUnitのPosition
     Vector2 position;
+
+    // インスタンスの宣言
+    Unit* units[MAX_UNITS];
 
     void SpawnUnit();
 
