@@ -1,4 +1,5 @@
 #include "UnitManager.h"
+#include "Screen.h"
 #include <cstdlib>
 
 UnitManager::UnitManager() : spawnTimer(0.0f) {
@@ -29,8 +30,10 @@ void UnitManager::Update() {
         if (units[i]) {
             units[i]->Update();
 
-            // 画面外に出たら削除（右方向に進むと仮定）
-            if (units[i]->GetPosition().x > 1280 || units[i]->GetPosition().x < -100) {
+            // 画面外に出たら削除
+            if (units[i]->GetPosition().x > SCREEN_WIDTH || units[i]->GetPosition().x < SCREEN_ORIGIN
+                && units[i]->GetPosition().y > SCREEN_HEIGHT || units[i]->GetPosition().y < SCREEN_ORIGIN)
+            {
                 DestroyUnit(i);
             }
         }

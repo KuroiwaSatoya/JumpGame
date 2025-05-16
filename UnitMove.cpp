@@ -4,7 +4,7 @@
 
 UnitMove::UnitMove(Unit& _unit) : unit(_unit) {
 
-    x = _unit.GetX();
+    x = _unit.GetPosition().x;
 
     isFirstUnit = _unit.GetIsFirstUnit();
 
@@ -19,7 +19,7 @@ void UnitMove::Update() {
 
     if (!isFirstUnit) {
 
-        x = unit.GetX();
+        x = unit.GetPosition().x;
 
         if (isComingFromLeft) {
 

@@ -10,10 +10,6 @@ public:
 
 	void Update() override;
 
-	float GetX() const { return position.x; }
-
-	float GetY() const { return position.y; }
-
 	Vector2 GetPosition() const { return position; }
 
 	Vector2 GetImageSize() const { return imageSize; }

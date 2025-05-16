@@ -19,9 +19,7 @@ PlayerDisplay::PlayerDisplay(LoadImages& _loadImages, PlayerMove& _playerMove) :
 
 void PlayerDisplay::Update() {
 
-	position.x = playerMove.GetX();
-
-	position.y = playerMove.GetY();
+	position = playerMove.GetPosition();
 
 }
 

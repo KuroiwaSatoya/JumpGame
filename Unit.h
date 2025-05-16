@@ -15,8 +15,6 @@ public:
 
 	void Display() override;
 
-	float GetX() const { return position.x; }
-
 	bool GetIsFirstUnit() const { return isFirstUnit; }
 
 	Vector2 GetPosition() const { return position; }
