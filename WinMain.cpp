@@ -194,7 +194,3 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	// ソフトの終了 
 	return 0;
 }
-
-/* Unitを沢山出すと思うんだけど、
-出現しているかというのをbool型で管理して、
-出現していない番号の若い順から出現させればよいのでは？ */
