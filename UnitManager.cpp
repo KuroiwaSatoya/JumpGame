@@ -43,7 +43,7 @@ void UnitManager::Update() {
 void UnitManager::SpawnUnit() {
     for (int i = 1; i < MAX_UNITS; ++i) { 
         if (!units[i]) {
-            units[i] = new Unit({ 0, 600 });
+            units[i] = new Unit(position);
             break;
         }
     }

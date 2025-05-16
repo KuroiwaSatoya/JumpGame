@@ -20,6 +20,8 @@ private:
 
     const float SPAWN_INTERVAL = 5.0f;
 
+    Vector2 position;
+
     void SpawnUnit();
 
     void DestroyUnit(int index);
