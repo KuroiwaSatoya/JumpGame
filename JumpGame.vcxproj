@@ -152,6 +152,7 @@
     <ClCompile Include="PlayerRun.cpp" />
     <ClCompile Include="StageMain.cpp" />
     <ClCompile Include="Unit.cpp" />
+    <ClCompile Include="UnitManager.cpp" />
     <ClCompile Include="UnitMove.cpp" />
     <ClCompile Include="WinMain.cpp" />
   </ItemGroup>
@@ -171,6 +172,7 @@
     <ClInclude Include="Screen.h" />
     <ClInclude Include="StageMain.h" />
     <ClInclude Include="Unit.h" />
+    <ClInclude Include="UnitManager.h" />
     <ClInclude Include="UnitMove.h" />
     <ClInclude Include="Vector2.h" />
   </ItemGroup>

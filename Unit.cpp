@@ -1,6 +1,7 @@
 #include "Unit.h"
 #include "DxLib.h"
 
+// 1つ目のUnitの初期化
 Unit::Unit(bool _isFirstUnit) {
 	// GetColor(255, 255, 255)と同じ(16進数の色表記でOK)
 	unitColor = 0xFFFFFF;
@@ -16,13 +17,14 @@ Unit::Unit(bool _isFirstUnit) {
 	isFirstUnit = _isFirstUnit;
 }
 
-Unit::Unit(){
+// 2つ目以降
+Unit::Unit(Vector2 _position){
 	// GetColor(255, 255, 255)と同じ(16進数の色表記でOK)
 	unitColor = 0xFFFFFF;
 
 	unitLineColor = 0x000000;
 
-	position = Vector2(550, 500);
+	position = _position;
 
 	size = Vector2(200, 30);
 
@@ -32,8 +34,7 @@ Unit::Unit(){
 }
 
 void Unit::Update() {
-	// ここに出現条件を書く
-	// 動かすのは他でやるので出現だけさせればOK
+	
 }
 
 void Unit::Display() {

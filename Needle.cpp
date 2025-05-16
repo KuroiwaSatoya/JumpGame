@@ -13,8 +13,8 @@ Needle::Needle(){
 	TriangleVertexesY2 = SCREEN_HEIGHT;
 	TriangleVertexesY3 = SCREEN_HEIGHT;
 
-	TriangleColor = GetColor(122, 146, 242);
-	TriangleLineColor = GetColor(0, 0, 0);
+	TriangleColor = 0x7A92F2;
+	TriangleLineColor = 0x000000;
 }
 
 void Needle::Update() {
